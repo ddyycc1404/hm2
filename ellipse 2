@@ -1,0 +1,48 @@
+function setup() {
+    createCanvas(400, 400);
+}
+
+var x = 10;
+var changeInX = 3;
+var r=40
+var ca=20
+var cb=30
+var y=40
+var changeIny=6
+
+function draw() {
+    background(220);
+
+	  fill(ca,cb,200)
+    ellipse(x, 200, r);
+
+    x = x + changeInX;
+
+    if (x > width) {
+        changeInX = -3;
+    }
+
+    if (x < 0) {
+        changeInX = 3;
+    }
+	
+	 r=x
+	
+	ca=x+50
+	cb=x+ca
+	
+	
+	  fill(ca,160,cb)
+	  ellipse(160,y,r)
+	
+	  y= y + changeIny
+	
+	  if(y>height){
+		   changeIny=-2
+		}
+	
+	  if(y<0){
+		changeIny=6
+		}
+	
+}
