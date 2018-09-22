@@ -1,0 +1,26 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+var x1=60
+var y1=310
+
+function draw() {
+  background(0,0,0);
+	
+	fill(240,240,240)
+	rect(0,0,x1,180)
+	rect(0,200,x1,110)
+	rect(90,320,260,80)
+	rect(360,320,40,40)
+	
+	fill(0,0,200)
+	rect(0,320,x1,80)
+	
+	fill(250,250,0)
+	rect(360,370,40,40)
+	
+	fill(200,0,0)
+	rect(90,0,y1,y1)
+	
+}
